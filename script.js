@@ -76,7 +76,7 @@ $(document).ready(function () {
                 var divWind = $("<p>").addClass("card-text")
                 divWind.attr("id", "windSpeed");
                 
-                divTitle.text(response.name + " " + today + " " + image); 
+                divTitle.text(response.name + " " + today + " ").append(image);
                 divTemp.text("Temperature: " + response.main.temp.toFixed(1) + " °F");  
                 divHum.text("Humidity: " + response.main.humidity + "%");
 
@@ -103,7 +103,11 @@ $(document).ready(function () {
         }).then(function (res){
       
           console.log(res)
-          
+          var body = $(".card");
+          var divUvi = $("<p>").addClass("card-text")
+          divUvi.text("UVI Index: " + res.current.uvi)
+          body.append(divUvi)
+
           $('#forecast').empty();
       
           // variable to hold response.list
