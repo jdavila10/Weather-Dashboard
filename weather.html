@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Ajax    -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div id="title" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Weather Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="container container-xl">
+            <div class="row">
+        
+                <!-- Search -->
+                <div class="col-lg-3 bg-light pb-3">
+        
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control" placeholder="Search for a City" id="citySearch">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" id="searchBtn">Search</button>
+                        </div>
+                    </div>
+        
+                    <!-- Search History List -->
+                    <ul class="list-group" id="searchHistory">
+                    </ul>
+                </div>
+                
+                
+                <!-- Weather Column -->
+                <div class="col-lg-9">
+                
+                    <!-- Current weather -->
+                    <div class="row">
+        
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title m-0" id="city"><center>Search for a City</center></h2>
+                                <br>
+                                
+                            </div>
+                        </div>
+        
+                        
+                    </div>
+        
+                    <div class="mb-2" id="divide"></div> 
+                    <br>
+        
+                    <!-- 5-day Forcast Title -->
+                    <div class="row mx-2">
+                        <h3 class="ml-3">5-Day Forecast:</h3>
+                       
+                    </div>
+        
+                    <br>
+                    <!-- 5-day Forcast Content -->
+                    <div class="row mx-2" id="forecast">
+                    </div>
+                </div>
+            </div>
+ <!-- jQuery JS -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <!-- javascript -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
