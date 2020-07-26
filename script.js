@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     function searchWeather(term) {
 
-        var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${term}&appid=0085a766ccd837cc98f89fbc8dd6ed37&units=imperial`
+        var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${term}&appid=0085a766ccd837cc98f89fbc8dd6ed37&units=imperial`
 
 
 
